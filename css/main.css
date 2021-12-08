@@ -86,7 +86,12 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-   
+
+
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+} 
    
 /* --- Base Header - Footer Styles --- */
 
@@ -101,6 +106,7 @@ footer {
 /* Header styles */
 
 header {
+  padding: 15px 0;
 }
 
 header img {
@@ -112,10 +118,13 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
 }
 
 header .header-divider {
-
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
@@ -123,11 +132,13 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
 header nav ul li a {
@@ -142,7 +153,7 @@ header nav ul li a {
   flex-flow: row wrap;
 }
 
-main .content-wrapper {
+.hero-area .content-wrapper {
 
 }
 
@@ -156,6 +167,7 @@ aside {
 }
 
 aside .content-wrapper {
+  padding: 30px 20px;
 }
 
 .form-description {
@@ -174,8 +186,17 @@ aside .content-wrapper {
   flex-flow: row wrap;
 }
 
-section .content-wrapper {
+.features p {
+  margin: 0;
+}
 
+.features h2 {
+  margin-bottom: 60px;
+}
+
+.features article {
+  width: 63%;
+  margin: 30px 0;
 }
 
 .features .features-items {
@@ -185,16 +206,20 @@ section .content-wrapper {
   flex-flow: row wrap;
 }
 
-.features-item-description {
-
-}
-
 /* -- Reviews -- */
 
 .reviews {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+.reviews h2 {
+  margin-bottom: 40px;
+}
+
+.reviews h3 {
+  width: 55%;
+  margin: 20px 0;
 }
 
 .reviews .content-wrapper {
@@ -203,22 +228,25 @@ section .content-wrapper {
 
 /* Footer */
 
-footer .content-wrapper {
-
+footer {
+  flex-direction: column;
 }
 
-.footer-contact {
+footer p {
+  margin: 0;
+}
 
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .contact {
+  margin-bottom: 50px;
 }
 
 .contact {
 
-}
-
-footer .social-icons p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 footer .social-icons {
@@ -227,8 +255,14 @@ footer .social-icons {
   align-items: center;
 }
 
-.copyright {
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.copyright {
+  margin: 20px 0;
 }
 
 /* --- Mobile Styles - About --- */
@@ -241,10 +275,6 @@ footer .social-icons {
 }
 
 .mission .content-wrapper {
-
-}
-
-.mission-content {
 
 }
 
@@ -263,8 +293,8 @@ footer .social-icons {
 
 }
 
-.contact-content {
-
+.contact-content p{
+  margin: 0;
 }
 
 /* --- Mobile Styles - Faq --- */
@@ -281,11 +311,17 @@ footer .social-icons {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 50px 0 0 0;
+}
+
+.faq h2 {
+  margin-bottom: 40px;
 }
 
 .faq-content {
-
+  margin-bottom: 50px;
 }
+
 
 /* ==========================================================================
    Helper classes
