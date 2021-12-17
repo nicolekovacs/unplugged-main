@@ -197,8 +197,6 @@ header nav ul {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-
-  background-image: url("../img/hero-img.jpg")
 }
 
 .hero-area h1 {
@@ -247,8 +245,6 @@ aside p {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-
-  background-image: url("../img/faded-img.jpg");
 }
 
 .features p {
