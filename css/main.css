@@ -97,6 +97,7 @@ textarea {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     text-align: left;
+    color: #e2e3ed;
   }
     
   ul, 
@@ -112,6 +113,7 @@ textarea {
   h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.875em;
+    font-weight: 500;
   }
     
   h3, 
@@ -119,6 +121,7 @@ textarea {
     font-family: 'Poppins', sans-serif;
     margin: 20px 0;
     font-size: 1.125em;
+    font-weight: 500;
   }
     
   p {
@@ -201,6 +204,17 @@ header nav ul {
   width: 100%;
 }
 
+.header-divider {
+  background: #3a3a3a; 
+  height: 1px;
+  width: 100%;
+  margin: 10px 0 20px 0;
+}
+
+header nav ul li {
+  font-size: 1.125em;
+}
+
 /* --- Mobile Styles - Homepage --- */
 
 .hero-area {
@@ -219,7 +233,6 @@ header nav ul {
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500; 
   line-height: 1.2; 
-  color: #e2e3ed;
 }
 /* -- Aside -- */
 
@@ -295,6 +308,7 @@ input[type=button] {
   font-size: 1.142em;
   line-height: 1.125em;
   color: #e2e3ed;
+  text-align: center;
 }
 
 .features h2 {
@@ -347,9 +361,10 @@ input[type=button] {
 
 footer {
   flex-direction: column;
-
+  text-align: center;
   background-color: #202322;
 }
+
 
 footer p {
   margin: 0;
@@ -413,6 +428,22 @@ footer .social-icons p {
   margin: 0;
   font-size: 1.125em;
   color: #fff;
+}
+
+.map figure {
+  width: 100%;
+  height: 0;
+  position: relative;
+  padding-bottom: 125%;
+  overflow: hidden;
+}
+
+.map iframe {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
 }
 
 /* --- Mobile Styles - Faq --- */
