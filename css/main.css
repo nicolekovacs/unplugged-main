@@ -736,6 +736,10 @@ footer .social-icons p {
     padding-top: 20px;
   }
 
+  .map figure {
+    padding-bottom: 50%;
+  }
+
   .contact-section .content-wrapper h2 {
     width: 80%;
   }
@@ -870,10 +874,12 @@ About Page
    font-size: 3em;
   }
 
-  .contact-content h4 {
-    font-size: 1.875em;
-  }
-
+.contact-content h4 {
+  font-size: 1.875em;
+}
+.map figure {
+  padding-bottom: 50%;
+}
 
 /* ==========================================================================
 FAQ Page
