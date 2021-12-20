@@ -143,7 +143,7 @@ textarea {
 
   .content-wrapper {
     width: 90%;
-    margin: 50px 0;
+    margin: 0 50px;
   } 
    
 /* --- Base Header - Footer Styles --- */
@@ -160,12 +160,8 @@ footer {
 
 /* Header styles */
 
-header {
-  padding: 15px 0;
-}
-
 header figure {
-  width: 60%;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -178,11 +174,12 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+  padding: 15px 0;
 }
 
 header .header-divider {
   width: 100%;
-  height: 20px;
+  height: 1px;
   margin: 10px 0 20px 0;
   color: #3a3a3a;
 }
@@ -192,7 +189,7 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width: 60%;
+  width: 100%;
   font-size: 1.125em;
   font-weight: 700;
   text-transform: uppercase;
@@ -215,6 +212,7 @@ header nav ul li {
   font-size: 1.125em;
 }
 
+
 /* --- Mobile Styles - Homepage --- */
 
 .hero-area {
@@ -236,6 +234,11 @@ header nav ul li {
 }
 /* -- Aside -- */
 
+main {
+  margin: 0;
+  padding: 0;
+}
+
 aside {
   display: flex;
   justify-content: center;
@@ -243,10 +246,13 @@ aside {
   flex-flow: row wrap;
 
   background-color: #527158;
+  padding: 0;
+  margin: 0;
 }
 
 aside .content-wrapper {
-  padding: 30px 20px;
+  padding: 0;
+  margin: 0;
 }
 
 aside .form-description {
@@ -255,16 +261,18 @@ aside .form-description {
 
 aside h3 {
   color: #e2e3ed;
-  font-size: 1.125em;
+  font-size: 2em;
 }
 
 aside p {
   color: #e2e3ed;
-  font-size: 1.142;
+  font-size: 1.5em;
+  flex-wrap: wrap;
 }
 
 aside .form{
-  margin-top: 30px;
+  margin: 30px 15px;
+  width: 100%;
 }
 
 /* FORM INPUT STYLES */
@@ -415,7 +423,7 @@ footer .social-icons i {
 .copyright {
   margin: 20px 0;
   color: #fff;
-  font-size: 1.125em;
+  font-size: 1em;
 }
 
 /* --- Mobile Styles - About --- */
@@ -440,7 +448,7 @@ footer .social-icons i {
 
 .contact-content p {
   margin: 0;
-  font-size: 1.125em;
+
   color: #fff;
 }
 
@@ -586,7 +594,7 @@ footer .social-icons i {
   /* General */
   .content-wrapper {
     max-width: 640px;
-    margin: 100px 0;
+    margin: 50px 0;
   }
 
   h2 {
@@ -619,16 +627,16 @@ footer .social-icons i {
     justify-content: space-between;
   }
 
+  header nav ul li a {
+    margin: 0 10px;
+  }
+
   .header-divider {
     display: none;
   }
 
   header figure {
     width: 30%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-flow: row wrap;
   }
 
   /* Hero Area */
@@ -642,16 +650,15 @@ footer .social-icons i {
   /* Aside */
 
   aside .content-wrapper {
-    margin: 50px 0;
+    margin: 0;
     display: flex;
     justify-content: space-between;
-    flex-flow: row wrap;
+    flex-flow: nowrap;
   }
 
-  aside .content-wrapper .form-description
-  aside .content-wrapper .form {
+  aside .form-description
+  aside .form {
     width: 40%;
-    margin: 0;
   }
 
   /* Features */
@@ -762,15 +769,18 @@ footer .social-icons i {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%
   }
 
   .contact-content h4 {
     font-size: 1.5em;
   }
 
-  /* FAQ PAGE - TABLET */
+  .contact-content-info {
+    width: 40%;
+  }
 
-  
+  /* FAQ PAGE - TABLET */
 
   .faq .content-wrapper {
     justify-content: space-between;
@@ -840,7 +850,11 @@ footer .social-icons i {
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width: 30%;
+    width: 40%;
+  }
+
+  aside p {
+    font-size: 1em;
   }
 
   /* Features */
@@ -855,10 +869,6 @@ footer .social-icons i {
 /* Reviews */ 
 .reviews article div {
    width: 42%;
-}
-
-.reviews h2 {
-  padding-bottom: 50px; 
 }
 
 .reviews figure {
